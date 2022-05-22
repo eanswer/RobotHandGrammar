@@ -39,7 +39,7 @@
   - Now, if you press *Ctrl + F5*, you are able to run the code.
 
 #### How does the UI work
-- This UI provide the process to construct the palm structure by palm gramar, construct the finger structure by finger grammar, and change the morphology of the constructed palm and finger by cage-based deformation [[Xu et al. 2021]](http://diffhand.csail.mit.edu/)
+- This UI provide the process to construct the palm structure by palm gramar, construct the finger structure by finger grammar, and change the morphology of the constructed palm and finger by cage-based deformation [[Xu et al. 2021]](http://diffhand.csail.mit.edu/).
 - The work flow is: Palm Grammar -> Finger Grammar -> Cage-based Deformation
 - Once you press the finish in one stage, the system will enter the next stage.
 - During the Palm Grammar and Finger Grammar stages, the applicable rules are displayed on the left panel.
