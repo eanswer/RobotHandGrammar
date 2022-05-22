@@ -1,0 +1,101 @@
+# starting symbol
+W
+
+# terminal symbols
+5
+
+k
+n
+c
+w
+e
+
+# number of all visual symbols
+7
+
+# meshes
+W meshes/W.STL
+w meshes/W.STL
+n meshes/N1_parent.STL meshes/N1_child.STL
+k meshes/N2_parent.STL meshes/N2_child.STL
+C meshes/C.STL
+c meshes/C.STL
+m meshes/M.STL
+
+# cage file
+palm_cage.txt
+
+# cage for mount
+mount_cage.txt
+
+# rules
+7
+
+{RULE}
+2 1
+{LHS}
+W
+-
+{RHS}
+w
+k
+{ROTATION}
+False
+
+{RULE}
+2 1
+{LHS}
+W
+-
+{RHS}
+w
+n
+{ROTATION}
+False
+
+{RULE}
+2 1
+{LHS}
+W
+-
+{RHS}
+w
+C
+{ROTATION}
+False
+
+{RULE}
+1 2
+{LHS}
+C-
+{RHS}
+CC
+{ROTATION}
+True
+
+{RULE}
+1 2
+{LHS}
+C-
+{RHS}
+Cn
+{ROTATION}
+True
+
+{RULE}
+1 2
+{LHS}
+C-
+{RHS}
+Ck
+{ROTATION}
+True
+
+{RULE}
+1 1
+{LHS}
+C
+{RHS}
+c
+{ROTATION}
+True

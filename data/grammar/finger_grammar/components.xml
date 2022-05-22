@@ -1,0 +1,151 @@
+
+<component symbol="F" symbol_type="NONTERMINAL" part_type="body">
+	<deformation flags="0 0 0 0"/>
+	<mesh type="single" path="mesh/F.stl" />
+	<cage path="cage/fingertip_cages_mean_value.txt" />
+	<connection>
+		<parent_connection origin="-40 0 0" x_axis="0 0 1" y_axis="0 1 0" z_axis="-1 0 0"/>
+		<child_connection count="1">
+			<connection_face id="0" origin="40 0 0" x_axis="0 0 1" y_axis="0 1 0" z_axis="-1 0 0"/>
+		</child_connection>
+	</connection>
+</component>
+
+<component symbol="B" symbol_type="NONTERMINAL" part_type="body">
+	<deformation flags="0 0 0 0"/>
+	<mesh type="single" path="mesh/B.stl" />
+	<cage path="cage/fingertip_cages_mean_value.txt" />
+	<connection>
+		<parent_connection origin="-40 0 0" x_axis="0 0 1" y_axis="0 1 0" z_axis="-1 0 0"/>
+		<child_connection count="1">
+			<connection_face id="0" origin="40 0 0" x_axis="0 0 1" y_axis="0 1 0" z_axis="-1 0 0"/>
+		</child_connection>
+	</connection>
+</component>
+
+<component symbol="S" symbol_type="NONTERMINAL" part_type="body">
+	<deformation flags="0 0 0 0"/>
+	<mesh type="single" path="mesh/B.stl" />
+	<cage path="cage/fingertip_cages_mean_value.txt" />
+	<connection>
+		<parent_connection origin="-40 0 0" x_axis="0 0 1" y_axis="0 1 0" z_axis="-1 0 0"/>
+		<child_connection count="1">
+			<connection_face id="0" origin="40 0 0" x_axis="0 0 1" y_axis="0 1 0" z_axis="-1 0 0"/>
+		</child_connection>
+	</connection>
+</component>
+
+<component symbol="T" symbol_type="NONTERMINAL" part_type="body">
+	<deformation flags="0 0 0 0"/>
+	<mesh type="single" path="mesh/B.stl" />
+	<cage path="cage/fingertip_cages_mean_value.txt" />
+	<connection>
+		<parent_connection origin="-40 0 0" x_axis="0 0 1" y_axis="0 1 0" z_axis="-1 0 0"/>
+		<child_connection count="1">
+			<connection_face id="0" origin="40 0 0" x_axis="0 0 1" y_axis="0 1 0" z_axis="-1 0 0"/>
+		</child_connection>
+	</connection>
+</component>
+
+<component symbol="joint" symbol_type="TERMINAL" part_type="joint">
+	<deformation flags="0 1 0 0"/>
+	<joint_axis start="-13 0 0" end="13 0 0"/>
+	<mesh type="separate">
+		<parent_mesh path="mesh/joint_parent.stl" />
+		<child_mesh path="mesh/joint_child.stl" />
+        	<aux_mesh path="mesh/joint_pulley.stl" />
+	</mesh>
+	<cage path="cage/joint_cages_mean_value.txt" />
+    	<tactile_quad_mesh path="tactile_quad_mesh/joint.txt"/>
+	<connection>
+		<parent_connection origin="10.8 0 0" x_axis="0 1 0" y_axis="0 0 1" z_axis="1 0 0"/>
+		<child_connection count="1">
+			<connection_face id="0" origin="-9.8 0 0" x_axis="0 1 0" y_axis="0 0 1" z_axis="1 0 0"/>
+		</child_connection>
+	</connection>
+</component>
+
+<component symbol="phalanx" symbol_type="TERMINAL" part_type="body">
+	<deformation flags="1 0 0 0"/>
+	<mesh type="separate">
+		<parent_mesh path="mesh/phalanx_body.stl" />
+		<aux_mesh path="mesh/phalanx_dorsal_cover.stl" />
+		<aux_mesh path="mesh/phalanx_palmar_cover.stl" />
+	</mesh>
+	<cage path="cage/phalanx_body_cages_mean_value.txt" />
+    	<tactile_quad_mesh path="tactile_quad_mesh/phalanx.txt"/>
+	<connection>
+		<parent_connection origin="12.2 0 0" x_axis="0 1 0" y_axis="0 0 1" z_axis="1 0 0"/>
+		<child_connection count="1">
+			<connection_face id="0" origin="-11.2 0 0" x_axis="0 1 0" y_axis="0 0 1" z_axis="1 0 0"/>
+		</child_connection>
+	</connection>
+</component>
+
+<component symbol="F" symbol_type="NONTERMINAL" part_type="body">
+	<deformation flags="0 1 0 0"/>
+	<mesh type="single" path="mesh/fork.stl" />
+	<cage path="cage/joint_cages_mean_value.txt" />
+	<connection>
+		<parent_connection origin="0 0 0" x_axis="0 -1 0" y_axis="0 0 1" z_axis="-1 0 0"/>
+		<child_connection count="2">
+			<connection_face id="0" origin="7.185 7.185 0" x_axis="-0.707 0.707 0" y_axis="0 0 -1" z_axis="-0.707 -0.707 0"/>
+			<connection_face id="1" origin="7.185 -7.185 0" x_axis="0.707 0.707 0" y_axis="0 0 -1" z_axis="-0.707 0.707 0"/>
+		</child_connection>
+	</connection>
+</component>
+
+<component symbol="fork" symbol_type="TERMINAL" part_type="body">
+	<deformation flags="0 1 0 0"/>
+	<mesh type="single" path="mesh/fork.stl" />
+	<cage path="cage/fork_cages_mean_value.txt" />
+	<connection>
+		<parent_connection origin="0 0 0" x_axis="0 -1 0" y_axis="0 0 1" z_axis="-1 0 0"/>
+		<child_connection count="2">
+			<connection_face id="0" origin="7.185 7.185 0" x_axis="-0.707 0.707 0" y_axis="0 0 -1" z_axis="-0.707 -0.707 0"/>
+			<connection_face id="1" origin="7.185 -7.185 0" x_axis="0.707 0.707 0" y_axis="0 0 -1" z_axis="-0.707 0.707 0"/>
+		</child_connection>
+	</connection>
+</component>
+
+<component symbol="adapter" symbol_type="TERMINAL" part_type="body">
+	<deformation flags="0 0 0 0"/>
+	<mesh type="single" path="mesh/adapter.stl" />
+	<cage path="cage/adapter_cages_mean_value.txt" />
+	<tactile_quad_mesh path="tactile_quad_mesh/adapter.txt"/>
+	<connection>
+		<parent_connection origin="0 0 6" x_axis="0 -1 0" y_axis="1 0 0" z_axis="0 0 1"/>
+		<child_connection count="1">
+			<connection_face id="0" origin="0 0 -6" x_axis="0 -1 0" y_axis="1 0 0" z_axis="0 0 1"/>
+		</child_connection>
+	</connection>
+</component>
+
+<component symbol="solid" symbol_type="TERMINAL" part_type="body">
+	<deformation flags="0 0 0 0"/>
+	<mesh type="single" path="mesh/solid.stl" />
+	<cage path="cage/solid_cages_mean_value.txt" />
+	<tactile_quad_mesh path="tactile_quad_mesh/solid.txt"/>
+	<connection>
+		<parent_connection origin="0 0 7.5" x_axis="0 -1 0" y_axis="1 0 0" z_axis="0 0 1"/>
+		<child_connection count="1">
+			<connection_face id="0" origin="0 0 -7.5" x_axis="0 -1 0" y_axis="1 0 0" z_axis="0 0 1"/>
+		</child_connection>
+	</connection>
+</component>
+
+<component symbol="tip" symbol_type="TERMINAL" part_type="body">
+	<deformation flags="1 0 0 0"/>
+	<mesh type="separate">
+		<parent_mesh path="mesh/fingertip_parent.stl" />
+		<aux_mesh path="mesh/fingertip_child.stl" />
+	</mesh>
+	<cage path="cage/fingertip_cages_mean_value.txt" />
+	<tactile_quad_mesh path="tactile_quad_mesh/tip.txt"/>
+	<connection>
+		<parent_connection origin="-10.8 0 0" x_axis="0 -1 0" y_axis="0 0 1" z_axis="-1 0 0"/>
+		<child_connection count="1">
+			<connection_face id="0" origin="0 0 0" x_axis="0 1 0" y_axis="0 0 1" z_axis="1 0 0"/>
+		</child_connection>
+	</connection>
+</component>

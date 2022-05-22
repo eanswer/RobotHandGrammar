@@ -1,0 +1,89 @@
+<component symbol="S" symbol_type="NONTERMINAL" part_type="body">
+	<deformation flags="0 0 0 0"/>
+	<mesh type="single" path="/data/grammar/finger/mesh/S.stl" />
+	<cage path="/data/grammar/finger/cage/fingertip_cages_mean_value.txt" />
+	<connection>
+		<parent_connection origin="0 0 0" x_axis="1 0 0" y_axis="0 1 0" z_axis="0 0 1"/>
+		<child_connection count="1">
+			<connection_face id="0" origin="0 0 0" x_axis="1 0 0" y_axis="0 1 0" z_axis="0 0 1"/>
+		</child_connection>
+	</connection>
+</component>
+
+<component symbol="F" symbol_type="NONTERMINAL" part_type="body">
+	<deformation flags="0 0 0 0"/>
+	<mesh type="single" path="/data/grammar/finger/mesh/C.stl" />
+	<cage path="/data/grammar/finger/cage/fingertip_cages_mean_value.txt" />
+	<connection>
+		<parent_connection origin="-40 0 0" x_axis="0 0 1" y_axis="0 1 0" z_axis="-1 0 0"/>
+		<child_connection count="1">
+			<connection_face id="0" origin="40 0 0" x_axis="0 0 1" y_axis="0 1 0" z_axis="-1 0 0"/>
+		</child_connection>
+	</connection>
+</component>
+
+<component symbol="B" symbol_type="NONTERMINAL" part_type="body">
+	<deformation flags="0 0 0 0"/>
+	<mesh type="single" path="/data/grammar/finger/mesh/B.stl" />
+	<cage path="/data/grammar/finger/cage/fingertip_cages_mean_value.txt" />
+	<connection>
+		<parent_connection origin="-40 0 0" x_axis="0 0 1" y_axis="0 1 0" z_axis="-1 0 0"/>
+		<child_connection count="1">
+			<connection_face id="0" origin="40 0 0" x_axis="0 0 1" y_axis="0 1 0" z_axis="-1 0 0"/>
+		</child_connection>
+	</connection>
+</component>
+
+<component symbol="knuckle" symbol_type="TERMINAL" part_type="joint">
+	<deformation flags="0 1 0 0"/>
+	<joint_axis start="0 9 0" end="0 -9 0"/>
+	<mesh type="single" path="/data/grammar/finger/mesh/knuckle.stl" />
+	<cage path="/data/grammar/finger/cage/knuckle_cages_mean_value.txt" />
+	<connection>
+		<parent_connection origin="0 0 -10.5922" x_axis="-1 0 0" y_axis="0 1 0" z_axis="0 0 -1"/>
+		<child_connection count="1">
+			<connection_face id="0" origin="0 0 9" x_axis="-1 0 0" y_axis="0 1 0" z_axis="0 0 -1"/>
+		</child_connection>
+	</connection>
+</component>
+
+<component symbol="joint" symbol_type="TERMINAL" part_type="joint">
+	<deformation flags="0 1 0 0"/>
+	<joint_axis start="-13 0 0" end="13 0 0"/>
+	<mesh type="separate">
+		<parent_mesh path="/data/grammar/finger/mesh/joint_parent.stl" />
+		<child_mesh path="/data/grammar/finger/mesh/joint_child.stl" />
+		<child_mesh path="/data/grammar/finger/mesh/joint_pulley.stl" />
+	</mesh>
+	<cage path="/data/grammar/finger/cage/joint_cages_mean_value.txt" />
+	<connection>
+		<parent_connection origin="0 0 -10.8" x_axis="-1 0 0" y_axis="0 1 0" z_axis="0 0 -1"/>
+		<child_connection count="1">
+			<connection_face id="0" origin="0 0 9.8" x_axis="-1 0 0" y_axis="0 1 0" z_axis="0 0 -1"/>
+		</child_connection>
+	</connection>
+</component>
+
+<component symbol="phalanx" symbol_type="TERMINAL" part_type="body">
+	<deformation flags="1 0 0 0"/>
+	<mesh type="single" path="/data/grammar/finger/mesh/phalanx_body.stl" />
+	<cage path="/data/grammar/finger/cage/phalanx_body_cages_mean_value.txt" />
+	<connection>
+		<parent_connection origin="0 0 -12.2" x_axis="-1 0 0" y_axis="0 1 0" z_axis="0 0 -1"/>
+		<child_connection count="1">
+			<connection_face id="0" origin="0 0 11.2" x_axis="-1 0 0" y_axis="0 1 0" z_axis="0 0 -1"/>
+		</child_connection>
+	</connection>
+</component>
+
+<component symbol="tip" symbol_type="TERMINAL" part_type="body">
+	<deformation flags="1 0 0 0"/>
+	<mesh type="single" path="/data/grammar/finger/mesh/fingertip.stl" />
+	<cage path="/data/grammar/finger/cage/fingertip_cages_mean_value.txt" />
+	<connection>
+		<parent_connection origin="0 0 9" x_axis="-1 0 0" y_axis="0 -1 0" z_axis="0 0 1"/>
+		<child_connection count="1">
+			<connection_face id="0" origin="0 0 0" x_axis="-1 0 0" y_axis="0 -1 0" z_axis="0 0 1"/>
+		</child_connection>
+	</connection>
+</component>

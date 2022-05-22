@@ -1,0 +1,10 @@
+forked_finger
+components.xml
+7
+{ S -> knuckle B }
+{ B -> joint F }
+{ F -> F B }
+{ F -> fork }
+{ B -> joint phalanx B }
+{ B -> joint tip }
+{ B -> tip }

@@ -1,0 +1,18 @@
+hand
+components.xml
+15
+{ P -> P empty }
+{ P -> palm }
+{ P -> P B }
+{ B -> joint F }
+{ B -> F }
+{ B -> S }
+{ B -> tip }
+{ B -> joint phalanx B }
+{ B -> joint T }
+{ F -> F B }
+{ F -> fork }
+{ T -> adapter tip }
+{ T -> adapter S }
+{ S -> solid S }
+{ S -> solid }
